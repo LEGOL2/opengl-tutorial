@@ -1,5 +1,6 @@
 #include "application/application.hpp"
 
-#include <GLFW/glfw3.h>
-
-int main() {}
+int main() {
+	Application app(1200, 900);
+	app.RenderLoop();
+}
