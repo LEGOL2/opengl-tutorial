@@ -17,3 +17,5 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/glew/build/cmake)
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/glew/include)
 add_compile_definitions(GLEW_STATIC)
 target_link_libraries(${PROJECT_NAME} PRIVATE glew_s)
+
+add_subdirectory(shaders)
